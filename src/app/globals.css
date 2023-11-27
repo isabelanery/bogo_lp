@@ -26,3 +26,7 @@ body {
 b {
   font-weight: 800;
 }
+
+.display-hidden {
+  display: none !important;
+}
