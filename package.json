@@ -2,15 +2,19 @@
   "name": "bogo_lp_new",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://isabelanery.github.io/bogo_lp",
   "scripts": {
     "dev": "next dev -p 4000",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
     "framer-motion": "^10.16.5",
+    "gh-pages": "^6.1.0",
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18"
